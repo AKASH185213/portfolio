@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080a14">
+  <meta name="description" content="L. Akash — first-year AIML student exploring intelligent systems, web development, and practical projects.">
+  <title>L. Akash — AIML Developer in Progress</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <canvas id="network" aria-hidden="true"></canvas>
+  <div class="cursor-glow" aria-hidden="true"></div><div class="custom-cursor" aria-hidden="true"></div><div class="custom-cursor-ring" aria-hidden="true"></div><div id="cursorTrailLayer" aria-hidden="true"></div>
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="L Akash home"><span class="brand-mark">A<span>.</span></span><span>L. AKASH</span></a>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="#about">About</a><a href="#education">Education</a><a href="#projects">Projects</a><a href="#journey">Journey</a><a href="#contact">Contact</a>
+    </nav>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation">☰</button>
+    <button class="command-trigger" id="commandTrigger" aria-label="Open command palette"><span>⌕</span> <kbd>Ctrl K</kbd></button>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span class="status-dot"></span> FIRST-YEAR AIML STUDENT <span class="eyebrow-line"></span> INDIA</p>
+        <h1 class="name-headline">L. <span class="gradient-text">Akash</span></h1>
+        <p class="hero-subtitle">First-year B.Tech AIML student learning by building, experimenting, and turning ideas into practical projects.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projects">Explore my work <span>↗</span></a>
+          <a class="btn btn-ghost" href="#contact">Let's connect <span>→</span></a>
+        </div>
+        <div class="hero-meta"><span><i class="meta-bar"></i> B.Tech · AI & Machine Learning</span><span class="mono">2026 — 2030</span></div>
+      </div>
+      <div class="hero-visual reveal">
+        <div class="visual-orbit orbit-a"></div><div class="visual-orbit orbit-b"></div>
+        <div class="photo-frame">
+          <div class="photo-placeholder" id="photoPlaceholder">
+            <div class="photo-initials">LA</div>
+            <span>YOUR PHOTO GOES HERE</span>
+            <small>Replace <code>assets/akash-photo.jpg</code></small>
+          </div>
+          <img id="profilePhoto" src="assets/akash-photo.jpg" alt="Portrait of L. Akash" hidden>
+          <div class="photo-caption"><span class="caption-pip"></span><span>BUILDING IN PUBLIC</span><span class="caption-index">01 / 04</span></div>
+        </div>
+        <div class="floating-tag tag-top"><span class="tag-icon">⌘</span><span><small>FOCUS</small><b>Learn · Build · Repeat</b></span></div>
+        <div class="floating-tag tag-bottom"><span class="tag-icon purple">✳</span><span><small>CURRENT MODE</small><b>Curious by default</b></span></div>
+        <div class="visual-cross cross-one">+</div><div class="visual-cross cross-two">+</div>
+      </div>
+      <a class="scroll-cue" href="#about"><span class="scroll-line"></span> SCROLL TO EXPLORE</a>
+    </section>
+
+    <section class="section intro-section" id="about">
+      <div class="section-kicker reveal"><span>01</span> / ABOUT ME</div>
+      <div class="intro-grid">
+        <h2 class="reveal">At the beginning.<br><span class="muted">Built to keep growing.</span></h2>
+        <div class="intro-copy reveal">
+          <p>Hi, I'm L. Akash, a first-year B.Tech student specializing in Artificial Intelligence and Machine Learning at Adarsh College of Engineering.</p>
+          <p>I'm interested in web development, Python programming, and building new things. I enjoy exploring ideas, learning new technologies, and turning what I learn into practical projects. I'm at the beginning of my journey, and I'm excited to keep learning, experimenting, and growing as a developer.</p>
+          <div class="interest-list"><span>Web development</span><span>Python</span><span>Building new things</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section education-section" id="education">
+      <div class="section-heading reveal"><div class="section-kicker"><span>02</span> / EDUCATION</div><h2>The path so far<span class="heading-dot">.</span></h2><p>Three milestones. One ongoing learning journey.</p></div>
+      <div class="education-list">
+        <article class="education-item reveal"><div class="timeline-marker">01</div><div class="education-main"><p class="mono overline">2024</p><h3>MPL High School (OBS)</h3><p class="subline">Pithapuram · Secondary education</p></div><div class="education-result"><strong>84.5%</strong><span>10th grade</span></div></article>
+        <article class="education-item reveal"><div class="timeline-marker">02</div><div class="education-main"><p class="mono overline">2024 — 2026</p><h3>RRBHR Government Junior College</h3><p class="subline">Pithapuram · Intermediate MPC</p></div><div class="education-result"><strong>89%</strong><span>Intermediate</span></div></article>
+        <article class="education-item current reveal"><div class="timeline-marker">03</div><div class="education-main"><p class="mono overline">2026 — 2030 · CURRENT</p><h3>Adarsh College of Engineering</h3><p class="subline">Chebrolu · B.Tech, Artificial Intelligence & Machine Learning</p></div><div class="education-result"><strong>AIML</strong><span>First year</span></div></article>
+      </div>
+    </section>
+
+    <section class="section projects-section" id="projects">
+      <div class="section-heading reveal"><div class="section-kicker"><span>03</span> / SELECTED WORK</div><h2>Projects & experiments<span class="heading-dot">.</span></h2><p>Real work, current learning, and ideas still on the roadmap.</p></div>
+      <div class="project-layout">
+        <div class="project-list" role="tablist" aria-label="Choose a project">
+          <button class="project-tab active" data-project="collegeconnect" role="tab" aria-selected="true"><span class="project-number">01</span><span class="project-tab-copy"><b>CollegeConnect</b><small>Flask + SQLite · Completed</small></span><span class="project-arrow">↗</span></button>
+          <button class="project-tab" data-project="studentai" role="tab" aria-selected="false"><span class="project-number">02</span><span class="project-tab-copy"><b>StudentAI</b><small>Early-stage concept · In progress</small></span><span class="project-arrow">↗</span></button>
+          <button class="project-tab" data-project="portfolio" role="tab" aria-selected="false"><span class="project-number">03</span><span class="project-tab-copy"><b>Personal Portfolio</b><small>Responsive cyber-tech website</small></span><span class="project-arrow">↗</span></button>
+          <button class="project-tab" data-project="todo" role="tab" aria-selected="false"><span class="project-number">04</span><span class="project-tab-copy"><b>To-Do List App</b><small>Planned · Not started</small></span><span class="project-arrow">↗</span></button>
+        </div>
+        <article class="project-detail reveal" id="projectDetail" aria-live="polite">
+          <div class="project-preview preview-college"><div class="preview-top"><span class="preview-logo">CC<span>.</span></span><span class="preview-window"><i></i><i></i><i></i></span></div><div class="preview-content"><span class="preview-label">CAMPUS HUB / 001</span><h3>College<span>Connect</span></h3><div class="preview-lines"><i></i><i></i><i></i></div><div class="preview-pills"><span>ANNOUNCEMENTS</span><span>TIMETABLES</span><span>DOCUMENTS</span></div></div><div class="preview-glow"></div></div>
+          <div class="project-detail-body"><div class="project-detail-top"><span class="status-label live"><i></i> EXISTING PROJECT</span><span class="mono project-id">PROJECT / 01</span></div><h3 id="detailTitle">CollegeConnect</h3><p id="detailDescription">A Flask and SQLite platform designed to bring college information into one place, including announcements, events, timetables, holidays, and documents.</p><div class="feature-block"><p class="mono feature-label">FEATURES</p><ul class="project-features" id="detailFeatures"><li>Announcements and events</li><li>Class and exam timetables</li><li>Holidays and documents</li><li>Login-based dashboards</li></ul></div><div class="tech-tags" id="detailTech"><span>Python</span><span>Flask</span><span>SQLite</span><span>HTML / CSS</span></div><div class="project-actions" id="detailActions"><a class="btn btn-primary small-btn" href="https://github.com/AKASH185213/CollegeConnect-Expo-Final" target="_blank" rel="noopener noreferrer">View GitHub Repo ↗</a><span class="source-note">Public source repository</span></div></div>
+        </article>
+      </div>
+      <p class="project-footnote"><span>↳</span> Project statuses are explicit: completed, in progress, or planned. Only the verified CollegeConnect repository is linked.</p>
+    </section>
+
+    <section class="section achievement-section" id="achievements">
+      <div class="section-kicker reveal"><span>04</span> / RECOGNITION</div>
+      <div class="achievement-card reveal"><div class="achievement-icon">✳</div><div class="achievement-copy"><p class="mono overline">PAPER PRESENTATION</p><h2>3rd Prize<span class="heading-dot">.</span></h2><h3>AIML in Cybersecurity</h3><p>Recognized for a solo paper presentation exploring how artificial intelligence and machine learning can contribute to cybersecurity.</p></div><div class="achievement-stamp"><span>AWARD</span><strong>03</strong><span>PLACE</span></div></div>
+    </section>
+
+    <section class="section journey-section" id="journey">
+      <div class="section-heading reveal"><div class="section-kicker"><span>05</span> / LEARNING JOURNEY</div><h2>Learning by doing<span class="heading-dot">.</span></h2><p>A snapshot of the tools I've used and the path I'm building.</p></div>
+      <div class="journey-grid">
+        <div class="journey-panel reveal"><p class="mono panel-label">TOOLS I'VE USED</p><div class="skill-row"><span class="skill-icon">5</span><div><b>HTML & CSS</b><small>Building web page structure and styling</small></div><span class="skill-state">LEARNING</span></div><div class="skill-row"><span class="skill-icon py">Py</span><div><b>Python</b><small>Programming fundamentals and project logic</small></div><span class="skill-state">LEARNING</span></div><div class="skill-row"><span class="skill-icon fl">F</span><div><b>Flask</b><small>Used in the CollegeConnect project</small></div><span class="skill-state used">USED</span></div><div class="skill-row"><span class="skill-icon db">▤</span><div><b>SQLite</b><small>Used for project data storage</small></div><span class="skill-state used">USED</span></div><p class="honesty-note">No artificial skill percentages — just an honest record of learning and use.</p></div>
+        <div class="journey-timeline reveal"><div class="journey-entry"><span class="journey-point"></span><p class="mono overline">FOUNDATIONS</p><h3>Learning the building blocks</h3><p>Exploring HTML, CSS, and Python fundamentals one concept at a time.</p></div><div class="journey-entry"><span class="journey-point"></span><p class="mono overline">BUILDING</p><h3>Turning lessons into projects</h3><p>Applied Python, Flask, and SQLite to create CollegeConnect.</p></div><div class="journey-entry"><span class="journey-point"></span><p class="mono overline">NEXT</p><h3>Keep experimenting</h3><p>Continue improving web development skills and build more practical projects.</p></div></div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="contact-orbit"></div><div class="section-kicker reveal"><span>06</span> / CONTACT</div>
+      <div class="contact-content reveal"><p class="mono overline">OPEN TO LEARNING & COLLABORATION</p><h2>Have an idea?<br><span class="gradient-text">Let's build something.</span></h2><p>I'm always interested in learning, exchanging ideas, and exploring projects that help me grow.</p><div class="contact-links">
+  <a href="https://github.com/AKASH185213"
+     class="contact-link" target="_blank" rel="noopener noreferrer">
+    GitHub <span>↗</span>
+  </a>
+
+  <a href="#" class="contact-link" id="email-button">
+  Email <span>↗</span>
+  </a>
+
+  <a href="https://www.linkedin.com/in/akash-l-409a27446/?isSelfProfile=true"
+     class="contact-link" target="_blank" rel="noopener noreferrer">
+    LinkedIn <span>↗</span>
+  </a>
+
+  <a href="https://www.instagram.com/love_hater_akash._.1/"
+     class="contact-link" target="_blank" rel="noopener noreferrer">
+    Instagram <span>↗</span>
+  </a>
+</div><p class="contact-note">Profile links will be added once the actual URLs are ready.</p></div>
+    </section>
+  </main>
+
+  <footer class="footer"><a class="brand" href="#home"><span class="brand-mark">A<span>.</span></span><span>L. AKASH</span></a><p>Made while learning. Designed to keep evolving.</p><span class="mono footer-status"><i class="status-dot"></i> SYSTEM ONLINE · IST</span><a href="#home" class="back-top">BACK TO TOP ↑</a></footer>
+
+  <div class="command-overlay" id="commandOverlay" aria-hidden="true">
+    <div class="command-backdrop" id="commandBackdrop"></div><div class="command-box" role="dialog" aria-modal="true" aria-label="Portfolio command palette"><div class="command-input-wrap"><span>⌕</span><input id="commandInput" type="text" placeholder="Jump to a section..." autocomplete="off"><kbd>ESC</kbd></div><div class="command-results" id="commandResults"><button data-target="#projects"><span>▦</span> Go to Projects <kbd>↵</kbd></button><button data-target="#about"><span>◉</span> About Me <kbd>↵</kbd></button><button data-target="#education"><span>⌁</span> Education <kbd>↵</kbd></button><button data-target="#achievements"><span>✳</span> Achievements <kbd>↵</kbd></button><button data-target="#journey"><span>⌘</span> Learning Journey <kbd>↵</kbd></button><button data-target="#contact"><span>↗</span> Contact <kbd>↵</kbd></button></div><div class="command-footer"><span>PORTFOLIO COMMANDS</span><span>↑↓ NAVIGATE · ENTER SELECT</span></div></div>
+  </div>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="script.js"></script>
+  <script>
+  // Independent cursor fallback: works even if another part of script.js fails.
+  (() => {
+    const dot = document.querySelector('.custom-cursor');
+    const ring = document.querySelector('.custom-cursor-ring');
+    if (!dot || !ring || !matchMedia('(hover: hover) and (pointer: fine)').matches) return;
+    document.documentElement.classList.add('custom-cursor-on');
+    for (const el of [dot, ring]) {
+      el.style.setProperty('display', 'block', 'important');
+      el.style.setProperty('opacity', '1', 'important');
+      el.style.setProperty('visibility', 'visible', 'important');
+      el.style.setProperty('position', 'fixed', 'important');
+      el.style.setProperty('pointer-events', 'none', 'important');
+    }
+    const move = e => {
+      const transform = `translate(${e.clientX}px, ${e.clientY}px) translate(-50%, -50%)`;
+      dot.style.setProperty('transform', transform, 'important');
+      ring.style.setProperty('transform', transform, 'important');
+      dot.style.setProperty('opacity', '1', 'important');
+      ring.style.setProperty('opacity', '1', 'important');
+    };
+    window.addEventListener('pointermove', move, { passive: true });
+    window.addEventListener('blur', () => {
+      dot.style.setProperty('opacity', '0', 'important');
+      ring.style.setProperty('opacity', '0', 'important');
+    });
+    window.addEventListener('focus', () => {
+      dot.style.setProperty('opacity', '1', 'important');
+      ring.style.setProperty('opacity', '1', 'important');
+    });
+  })();
+  </script>
+</body>
+</html>
